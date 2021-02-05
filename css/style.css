@@ -5,12 +5,8 @@
   --dark-gray: #969696;
 }
 
-@font-face {
-  font-family: KumbhSans;
-  src: url(../fonts/KumbhSans-Bold.ttf), url(../fonts/KumbhSans-Regular.ttf), url(../fonts/KumbhSans-Light.ttf);
-}
-
 body{
+  font-family: 'Kumbh Sans', sans-serif;
   margin: 0;
   height: 100vh;
   background-color: var(--dark-cyan);
@@ -22,21 +18,21 @@ body{
 
 html::after, html::before{
   content: "";
-  width: 900px;
-  height: 900px;
-  background-size: 900px 900px;
+  width: 978px;
+  height: 978px;
+  background-size: 978px 978px;
   position: absolute;
 }
 
 html::after{
   background-image: url(../images/bg-pattern-top.svg);
-  top: -500px;
+  top: -600px;
   left: -600px;
 }
 
 html::before{
   background-image: url(../images/bg-pattern-bottom.svg);
-  bottom: -600px;
+  bottom: -700px;
   right: -600px;
 }
 
@@ -81,7 +77,6 @@ html::before{
 }
 
 .card__text, .card__number{
-  font-family: KumbhSans;
   font-weight: 700;
   color: var(--very-dark-desaturated-blue);
   font-size: 18px;
